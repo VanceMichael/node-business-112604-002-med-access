@@ -1,0 +1,75 @@
+{
+  "synthetic": true,
+  "records": [
+    {
+      "recordId": "synthetic-01",
+      "kind": "sourceBill",
+      "payload": {
+        "source": "clinic-a",
+        "bill": "bill-8",
+        "revision": 1
+      }
+    },
+    {
+      "recordId": "synthetic-02",
+      "kind": "patientGrant",
+      "payload": {
+        "person": "person-a",
+        "doctor": "doctor-1",
+        "visit": "visit-a",
+        "range": [
+          "2026-01-01",
+          "2026-12-31"
+        ]
+      }
+    },
+    {
+      "recordId": "synthetic-03",
+      "kind": "hospitalRead",
+      "payload": {
+        "hospital": "hospital-a",
+        "pageSize": 1
+      }
+    },
+    {
+      "recordId": "synthetic-04",
+      "kind": "grantRevoke",
+      "payload": {
+        "person": "person-a",
+        "visit": "visit-a"
+      }
+    },
+    {
+      "recordId": "synthetic-05",
+      "kind": "bindingCorrection",
+      "payload": {
+        "source": "clinic-a",
+        "localPerson": "p17",
+        "person": "person-b",
+        "revision": 2
+      }
+    },
+    {
+      "recordId": "synthetic-06",
+      "kind": "hospitalImportReceipt",
+      "payload": {
+        "hospital": "hospital-a",
+        "source": "clinic-a",
+        "bill": "bill-8",
+        "line": "1",
+        "revision": 1
+      }
+    },
+    {
+      "recordId": "synthetic-07",
+      "kind": "sourceReversal",
+      "payload": {
+        "source": "clinic-a",
+        "bill": "bill-8",
+        "revision": 2,
+        "line": "2",
+        "amountMinor": 600
+      }
+    }
+  ]
+}

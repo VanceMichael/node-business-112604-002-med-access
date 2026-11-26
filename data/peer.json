@@ -1,0 +1,14 @@
+{
+  "name": "院方人员、就诊和病历接收端",
+  "operations": [
+    "staff",
+    "visit",
+    "correction"
+  ],
+  "identity_fields": [
+    "requestId",
+    "hospitalId",
+    "visitId"
+  ],
+  "facts": "staff 响应含 doctorId、active、hospitalId；visit 响应含 personId、doctorId、open；correction 响应只确认 notificationId 的 received。导入确认由医院携带 deliveryId 和收到的来源行版本发送给业务服务。"
+}

@@ -1,0 +1,93 @@
+{
+  "synthetic": true,
+  "sources": [
+    {
+      "id": "clinic-a",
+      "coverageThrough": "2026-11-24"
+    },
+    {
+      "id": "pharmacy-b",
+      "coverageThrough": "2026-11-23"
+    }
+  ],
+  "settlements": [
+    {
+      "source": "clinic-a",
+      "localPerson": "p17",
+      "bill": "bill-8",
+      "revision": 1,
+      "date": "2026-11-20",
+      "lines": [
+        {
+          "line": "1",
+          "drug": "synthetic-a",
+          "amountMinor": 2100
+        },
+        {
+          "line": "2",
+          "drug": "synthetic-b",
+          "amountMinor": 1800
+        }
+      ]
+    },
+    {
+      "source": "pharmacy-b",
+      "localPerson": "p17",
+      "bill": "bill-8",
+      "revision": 1,
+      "date": "2026-11-19",
+      "lines": [
+        {
+          "line": "1",
+          "drug": "synthetic-c",
+          "amountMinor": 3200
+        }
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "source": "clinic-a",
+      "bill": "bill-8",
+      "revision": 2,
+      "reverses": [
+        {
+          "line": "2",
+          "amountMinor": 600
+        }
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "source": "clinic-a",
+      "localPerson": "p17",
+      "person": "person-a"
+    },
+    {
+      "source": "pharmacy-b",
+      "localPerson": "p17",
+      "person": "person-b"
+    }
+  ],
+  "visits": [
+    {
+      "id": "visit-a",
+      "person": "person-a",
+      "hospital": "hospital-a",
+      "doctor": "doctor-1",
+      "open": true
+    }
+  ],
+  "actors": [
+    {
+      "id": "person-a",
+      "role": "patient"
+    },
+    {
+      "id": "doctor-1",
+      "role": "doctor",
+      "hospital": "hospital-a"
+    }
+  ]
+}
