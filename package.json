@@ -1,6 +1,6 @@
 {
   "name": "med-access",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -8,7 +8,9 @@
   },
   "scripts": {
     "peer": "node support/peer.mjs",
+    "service": "node src/server.mjs",
     "check:data": "node support/check-data.mjs",
+    "check:flow": "node support/check-flow.mjs",
     "test": "node --test"
   }
 }

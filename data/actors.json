@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "note": "本地合成身份目录。token 只用于隔离本服务中的角色，不是生产凭据。",
+  "actors": [
+    { "id": "person-a", "role": "patient", "token": "local-patient-a", "display": "患者甲（合成）" },
+    { "id": "person-b", "role": "patient", "token": "local-patient-b", "display": "患者乙（合成）" },
+    { "id": "person-c", "role": "patient", "token": "local-patient-c", "display": "患者丙（合成）" },
+    { "id": "doctor-1", "role": "doctor", "hospital": "hospital-a", "token": "local-doctor-1", "display": "医院甲医生一（合成）" },
+    { "id": "doctor-2", "role": "doctor", "hospital": "hospital-a", "token": "local-doctor-2", "display": "医院甲医生二（合成）" },
+    { "id": "doctor-9", "role": "doctor", "hospital": "hospital-b", "token": "local-doctor-9", "display": "医院乙医生九（合成）" },
+    { "id": "assistant-1", "role": "assistant", "hospital": "hospital-a", "token": "local-assistant-1", "display": "医院甲科室助理（合成）" },
+    { "id": "clinic-a-intake", "role": "source", "source": "clinic-a", "token": "local-source-clinic-a", "display": "诊所甲来源（合成）" },
+    { "id": "pharmacy-b-intake", "role": "source", "source": "pharmacy-b", "token": "local-source-pharmacy-b", "display": "药店乙来源（合成）" },
+    { "id": "hospital-a-records", "role": "hospital", "hospital": "hospital-a", "token": "local-hospital-a", "display": "医院甲病案接收（合成）" },
+    { "id": "hospital-b-records", "role": "hospital", "hospital": "hospital-b", "token": "local-hospital-b", "display": "医院乙病案接收（合成）" }
+  ]
+}

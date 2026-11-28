@@ -3,7 +3,10 @@ WORKDIR /app
 COPY --chown=node:node . .
 RUN mkdir -p /home/node/state && chown node:node /home/node/state
 USER node
+ENV SERVICE_HOST=0.0.0.0
+ENV SERVICE_STATE=/home/node/state/service.json
 ENV PEER_HOST=0.0.0.0
-ENV PEER_STATE=/tmp/peer/state.json
-EXPOSE 4300
-CMD ["npm", "run", "peer"]
+ENV PEER_STATE=/home/node/state/peer.json
+ENV PEER_URL=http://127.0.0.1:4300
+EXPOSE 4400 4300
+CMD ["node", "support/container-start.mjs"]
